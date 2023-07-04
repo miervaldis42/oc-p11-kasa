@@ -23,3 +23,12 @@
 body {
   font-family: "Montserrat", Helvetica, sans-serif;
 }
+
+ul,
+li {
+  list-style-type: none;
+}
+
+a {
+  text-decoration: none;
+}

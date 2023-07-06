@@ -1,0 +1,10 @@
+.home {
+  margin: 16px 20px;
+}
+
+/******** Desktop Version ********/
+@media (width >= 1440px) {
+  .home {
+    margin: 63px 100px;
+  }
+}

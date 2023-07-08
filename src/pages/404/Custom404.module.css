@@ -1,0 +1,49 @@
+.errorPage {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+
+  color: var(--color-primary);
+
+  padding: 42% 58px;
+
+  & h1 {
+    font-weight: var(--font-bold);
+    font-size: 96px;
+  }
+
+  & p {
+    font-weight: var(--font-medium);
+    font-size: 18px;
+    text-align: center;
+
+    margin-bottom: 130px;
+  }
+}
+
+.hyperlink {
+  color: var(--color-primary);
+  text-decoration: underline;
+
+  &:hover {
+    cursor: pointer;
+  }
+}
+
+/******** Desktop Version ********/
+@media (width >= 1440px) {
+  .errorPage {
+    padding: 7% 58px;
+
+    & h1 {
+      font-size: 288px;
+    }
+
+    & p {
+      font-size: 36px;
+
+      margin-bottom: 144px;
+    }
+  }
+}

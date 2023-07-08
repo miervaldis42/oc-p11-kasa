@@ -2,9 +2,27 @@
   margin: 16px 20px;
 }
 
+.gallery {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
 /******** Desktop Version ********/
 @media (width >= 1440px) {
   .home {
     margin: 63px 100px;
+  }
+
+  .gallery {
+    flex-direction: row;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 50px;
+
+    background-color: var(--color-grey);
+    border-radius: 25px;
+
+    padding: 56px 50px;
   }
 }

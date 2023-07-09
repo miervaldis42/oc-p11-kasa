@@ -1,0 +1,28 @@
+.aboutPage {
+  margin: 17px 20px;
+
+  & .aboutImg {
+    height: 223px;
+
+    background-image: url("../../assets/about-img.png");
+    background-size: cover;
+    background-position: center;
+    border-radius: 10px;
+    box-shadow: inset 0 0 0 1000px rgba(0, 0, 0, 0.4);
+  }
+}
+
+/******** Desktop Version ********/
+@media (width >= 1440px) {
+  .aboutPage {
+    margin: 44px 100px;
+
+    & .aboutImg {
+      height: 223px;
+    }
+
+    & .aboutSections {
+      padding: 0 112px;
+    }
+  }
+}

@@ -9,7 +9,7 @@ import Custom404 from "pages/404";
 const AccommodationRecord = React.lazy(
   () => import("pages/Accommodation/AccommodationRecord")
 );
-const About = React.lazy(() => import("pages/About/About"));
+const About = React.lazy(() => import("pages/About"));
 
 // Router of the project which allows Single Page Application app to act like a multiple page one.
 export default function AppRouter() {

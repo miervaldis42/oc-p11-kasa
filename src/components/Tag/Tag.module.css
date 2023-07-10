@@ -1,0 +1,33 @@
+.tag {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  background-color: var(--color-primary);
+  border-radius: 5px;
+
+  padding: 4px 30px;
+  margin: 10px 10px 0 0;
+
+  &:last-child {
+    margin-right: 0;
+  }
+
+  & p {
+    font-weight: var(--font-medium);
+    font-size: 10px;
+    color: var(--color-white);
+    word-break: keep-all;
+  }
+}
+
+/******** Desktop Version ********/
+@media (width >= 1440px) {
+  .tag {
+    border-radius: 10px;
+
+    & p {
+      font-size: 14px;
+    }
+  }
+}

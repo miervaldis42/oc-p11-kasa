@@ -1,0 +1,23 @@
+.ratings {
+  display: flex;
+  gap: 4px;
+
+  font-size: 18px;
+
+  & .star {
+    color: var(--color-primary);
+  }
+
+  & .emptyStar {
+    color: #e3e3e3;
+  }
+}
+
+/******** Desktop Version ********/
+@media (width >= 1440px) {
+  .ratings {
+    gap: 12px;
+
+    font-size: 24px;
+  }
+}

@@ -24,7 +24,7 @@ type AccommodationType = {
     name: string;
     picture: string;
   };
-  rating: string;
+  rating: number;
   location: string;
   equipments: string[];
   tags: string[];

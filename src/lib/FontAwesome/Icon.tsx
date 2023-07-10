@@ -8,6 +8,7 @@ const library = convertObjectKeyValueIntoStringType({
   caretLeft: "fa-solid fa-angle-left",
   caretRight: "fa-solid fa-angle-right",
   caretDown: "fa-solid fa-angle-down",
+  star: "fa-solid fa-star",
 });
 
 // Types

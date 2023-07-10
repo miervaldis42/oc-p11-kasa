@@ -1,0 +1,81 @@
+.carousel {
+  position: relative;
+
+  height: 255px;
+
+  & .loading {
+    height: 100%;
+    width: 100%;
+
+    fill: var(--color-primary);
+    background-color: var(--color-grey);
+    border-radius: 10px;
+
+    padding: 24%;
+  }
+
+  & img {
+    height: 100%;
+    width: 100%;
+
+    object-fit: cover;
+
+    border-radius: 10px;
+  }
+}
+
+.pagination {
+  display: none;
+}
+
+.carouselActionButtons {
+  position: absolute;
+  top: 40%;
+
+  width: -webkit-fill-available;
+
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+
+  & .carouselIcons {
+    font-size: 2rem;
+    color: var(--color-white);
+
+    cursor: pointer;
+
+    padding: 10px;
+  }
+}
+
+/******** Desktop Version ********/
+@media (width >= 1440px) {
+  .carousel {
+    height: 415px;
+
+    & img {
+      border-radius: 25px;
+    }
+  }
+
+  .pagination {
+    position: absolute;
+    bottom: 5%;
+    right: 47%;
+
+    display: block;
+
+    font-size: 18px;
+    color: var(--color-white);
+  }
+
+  .carouselActionButtons {
+    top: 40%;
+
+    & .carouselIcons {
+      font-size: 4rem;
+
+      padding: 24px;
+    }
+  }
+}

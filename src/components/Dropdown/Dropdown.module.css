@@ -27,6 +27,7 @@
   font-weight: var(--font-regular);
   font-size: 12px;
   color: var(--color-primary);
+  line-height: 130%;
 
   background-color: var(--color-grey);
 

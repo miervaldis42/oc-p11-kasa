@@ -1,5 +1,5 @@
 // Imports
-import { useState } from "react";
+import { useState, Children } from "react";
 
 // Styles
 import { Icon, library } from "lib/FontAwesome/Icon";
@@ -31,7 +31,18 @@ export default function DropdownSection({
 
       {isOpen && (
         <div className={styles.dropdownBody}>
-          <p>{content}</p>
+          {Array.isArray(content) ? (
+            Children.toArray(
+              content.map((c) => (
+                <p>
+                  {c}
+                  <br />
+                </p>
+              ))
+            )
+          ) : (
+            <p>{content}</p>
+          )}
         </div>
       )}
     </section>

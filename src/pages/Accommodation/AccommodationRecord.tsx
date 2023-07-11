@@ -1,6 +1,6 @@
 // Imports
 import { useState, useCallback, useEffect, Children } from "react";
-import { redirect, useParams } from "react-router-dom";
+import { useParams, useNavigate } from "react-router-dom";
 import pathList from "router/pathList";
 
 // API
@@ -25,6 +25,7 @@ import {
 export default function AccommodationRecord() {
   // Redirection
   const { id } = useParams();
+  const navigate = useNavigate();
 
   // Accommodation Data
   const [accommodation, setAccommodation] = useState<
@@ -41,12 +42,12 @@ export default function AccommodationRecord() {
 
       // Redirection if the id does not match any in the dummy database
       selectedAccommodation === undefined
-        ? redirect(pathList[404])
+        ? navigate(pathList[404])
         : setAccommodation(selectedAccommodation);
     } catch (error) {
-      redirect(pathList[404]);
+      navigate(pathList[404]);
     }
-  }, [id]);
+  }, [id, navigate]);
 
   const ratingStars: JSX.Element[] = [];
 

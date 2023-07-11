@@ -31,7 +31,7 @@ export default function About() {
   ];
 
   return (
-    <div className={styles.aboutPage}>
+    <main className={styles.aboutPage}>
       <div className={styles.aboutImg}></div>
 
       <div className={styles.aboutSections}>
@@ -41,6 +41,6 @@ export default function About() {
           ))
         )}
       </div>
-    </div>
+    </main>
   );
 }

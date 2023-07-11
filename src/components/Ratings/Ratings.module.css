@@ -3,14 +3,14 @@
   gap: 4px;
 
   font-size: 18px;
+}
 
-  & .star {
-    color: var(--color-primary);
-  }
+.ratings .star {
+  color: var(--color-primary);
+}
 
-  & .emptyStar {
-    color: #e3e3e3;
-  }
+.ratings .emptyStar {
+  color: #e3e3e3;
 }
 
 /******** Desktop Version ********/

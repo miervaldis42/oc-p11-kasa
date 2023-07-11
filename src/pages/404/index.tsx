@@ -9,7 +9,7 @@ import styles from "./Custom404.module.css";
 // Component
 export default function Custom404() {
   return (
-    <div className={styles.errorPage}>
+    <main className={styles.errorPage}>
       <>
         <h1>404</h1>
         <p>Oups! La page que vous demandez n'existe pas.</p>
@@ -18,6 +18,6 @@ export default function Custom404() {
       <Link to={pathList.home} className={styles.hyperlink}>
         Retourner sur la page d’accueil
       </Link>
-    </div>
+    </main>
   );
 }

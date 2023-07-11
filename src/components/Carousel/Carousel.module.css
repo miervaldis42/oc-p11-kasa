@@ -2,26 +2,26 @@
   position: relative;
 
   height: 255px;
+}
 
-  & .loading {
-    height: 100%;
-    width: 100%;
+.carousel .loading {
+  height: 100%;
+  width: 100%;
 
-    fill: var(--color-primary);
-    background-color: var(--color-grey);
-    border-radius: 10px;
+  fill: var(--color-primary);
+  background-color: var(--color-grey);
+  border-radius: 10px;
 
-    padding: 24%;
-  }
+  padding: 24%;
+}
 
-  & img {
-    height: 100%;
-    width: 100%;
+.carousel img {
+  height: 100%;
+  width: 100%;
 
-    object-fit: cover;
+  object-fit: cover;
 
-    border-radius: 10px;
-  }
+  border-radius: 10px;
 }
 
 .pagination {
@@ -33,29 +33,29 @@
   top: 40%;
 
   width: -webkit-fill-available;
+  width: -moz-available;
 
   display: flex;
   justify-content: space-between;
   align-items: center;
+}
 
-  & .carouselIcons {
-    font-size: 2rem;
-    color: var(--color-white);
+.carouselActionButtons .carouselIcons {
+  font-size: 2rem;
+  color: var(--color-white);
 
-    cursor: pointer;
+  cursor: pointer;
 
-    padding: 10px;
-  }
+  padding: 10px;
 }
 
 /******** Desktop Version ********/
 @media (width >= 1440px) {
   .carousel {
     height: 415px;
-
-    & img {
-      border-radius: 25px;
-    }
+  }
+  .carousel img {
+    border-radius: 25px;
   }
 
   .pagination {
@@ -71,11 +71,11 @@
 
   .carouselActionButtons {
     top: 40%;
+  }
 
-    & .carouselIcons {
-      font-size: 4rem;
+  .carouselActionButtons .carouselIcons {
+    font-size: 4rem;
 
-      padding: 24px;
-    }
+    padding: 24px;
   }
 }

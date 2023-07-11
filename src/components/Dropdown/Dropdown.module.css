@@ -12,15 +12,15 @@
 
   padding: 5px 12px;
   margin-top: 19px;
+}
 
-  & h2 {
-    font-weight: var(--font-medium);
-    font-size: 13px;
-  }
+.dropdownHeader h2 {
+  font-weight: var(--font-medium);
+  font-size: 13px;
+}
 
-  & .dropdownIcon {
-    color: var(--color-white);
-  }
+.dropdownHeader .dropdownIcon {
+  color: var(--color-white);
 }
 
 .dropdownBody {
@@ -39,11 +39,11 @@
   .dropdownHeader {
     padding: 5px 18px;
     margin-top: 33px;
+  }
 
-    & h2 {
-      font-weight: var(--font-medium);
-      font-size: 24px;
-    }
+  .dropdownHeader h2 {
+    font-weight: var(--font-medium);
+    font-size: 24px;
   }
 
   .dropdownBody {

@@ -68,7 +68,7 @@ export default function AccommodationRecord() {
   }, [fetchAccommodationInfo]);
 
   return (
-    <>
+    <main>
       {accommodation !== undefined && (
         <div className={styles.recordPage}>
           <Carousel images={accommodation.pictures} />
@@ -113,6 +113,6 @@ export default function AccommodationRecord() {
           </div>
         </div>
       )}
-    </>
+    </main>
   );
 }

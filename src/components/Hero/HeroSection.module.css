@@ -11,14 +11,14 @@
   padding-right: 102px;
 
   margin-bottom: 22px;
+}
 
-  & p {
-    font-weight: var(--font-medium);
-    font-size: 24px;
-    color: var(--color-white);
-    line-height: 24px;
-    word-wrap: break-word;
-  }
+.hero p {
+  font-weight: var(--font-medium);
+  font-size: 24px;
+  color: var(--color-white);
+  line-height: 24px;
+  word-wrap: break-word;
 }
 
 /******** Desktop Version ********/
@@ -33,9 +33,9 @@
     border-radius: 25px;
 
     margin-bottom: 43px;
+  }
 
-    & p {
-      font-size: 48px;
-    }
+  .hero p {
+    font-size: 48px;
   }
 }

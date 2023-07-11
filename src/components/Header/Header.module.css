@@ -16,25 +16,26 @@
   fill: var(--color-primary);
 }
 
+/* Navbar */
 nav {
   width: 140px;
+}
 
-  & ul {
-    display: flex;
-    justify-content: space-between;
-  }
+nav ul {
+  display: flex;
+  justify-content: space-between;
+}
 
-  & a {
-    font-weight: var(--font-medium);
-    font-size: 12px;
-    text-transform: uppercase;
-    color: var(--color-primary);
+nav a {
+  font-weight: var(--font-medium);
+  font-size: 12px;
+  text-transform: uppercase;
+  color: var(--color-primary);
+}
 
-    &:hover,
-    &.active {
-      text-decoration: underline;
-    }
-  }
+nav a:hover,
+nav a.active {
+  text-decoration: underline;
 }
 
 /******** Desktop Version ********/
@@ -44,12 +45,13 @@ nav {
     margin-bottom: 0;
   }
 
+  /* Navbar */
   nav {
     width: 300px;
+  }
 
-    & a {
-      font-size: 24px;
-      text-transform: none;
-    }
+  nav a {
+    font-size: 24px;
+    text-transform: none;
   }
 }

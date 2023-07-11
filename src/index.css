@@ -21,7 +21,12 @@
   margin: 0;
 }
 
-body {
+#root {
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+
   font-family: "Montserrat", Helvetica, sans-serif;
 }
 

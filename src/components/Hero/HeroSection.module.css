@@ -1,6 +1,5 @@
 .hero {
   height: 111px;
-  width: 335px;
 
   background-image: url(../../assets/hero-img.png);
   background-size: cover;
@@ -26,7 +25,6 @@
 @media (width >= 1440px) {
   .hero {
     height: 223px;
-    width: auto;
 
     display: flex;
     justify-content: center;

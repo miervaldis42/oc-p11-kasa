@@ -9,7 +9,7 @@
 }
 
 /******** Desktop Version ********/
-@media (width >= 1440px) {
+@media (width >= 800px) {
   .home {
     margin: 63px 100px;
   }
